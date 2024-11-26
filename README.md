@@ -1,6 +1,6 @@
-# **Flutter Project Setup Guide**
+# **Project Setup Guide**
 
-Welcome to the Flutter project! This README provides step-by-step instructions to set up and run the project on your local machine. Follow these steps to ensure everything is configured correctly.
+Welcome to the Meal Report project! This README provides step-by-step instructions to set up and run the project on your local machine. Follow these steps to ensure everything is configured correctly.
 
 ---
 
@@ -17,8 +17,8 @@ Make sure you have the following installed:
 
 ### 1. **Clone the Repository**
 ```bash
-git clone [<repository_url>](https://github.com/durgesh-k/meal_report_app)
-cd [<project_directory>](https://github.com/durgesh-k/meal_report_app)
+git clone https://github.com/durgesh-k/meal_report_app
+cd https://github.com/durgesh-k/meal_report_app
 ```
 
 ### 2. **Install Dependencies**
@@ -28,7 +28,7 @@ flutter pub get
 ```
 
 ### 3. **Generate Files**
-If the project uses code generation (e.g., for JSON serialization or dependency injection), run:
+The project uses code generation, run:
 ```bash
 dart run build_runner build --delete-conflicting-outputs
 ```
@@ -45,30 +45,6 @@ Run the application on your connected device or emulator:
 flutter run
 ```
 
----
-
-## **Additional Commands**
-
-### Clean the Project
-To remove build artifacts:
-```bash
-flutter clean
-```
-
-### Analyze the Code
-To analyze the code for errors and warnings:
-```bash
-flutter analyze
-```
-
-### Run Tests
-To execute the test suite:
-```bash
-flutter test
-```
-
----
-
 ## **Notes**
 - Ensure your **emulator or device** is running before executing `flutter run`.  
 - If you encounter issues with build files, run:
@@ -76,7 +52,6 @@ flutter test
   flutter clean
   flutter pub get
   ```
-- For custom splash screen configurations, modify the `flutter_native_splash.yaml` file.
 
 ---
 
