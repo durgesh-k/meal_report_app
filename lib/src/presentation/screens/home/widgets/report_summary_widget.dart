@@ -63,7 +63,8 @@ class ReportSummaryWidget extends StatelessWidget {
                     fontSize: 18)),
             Column(
               children: [
-                Text("${(summary.totalFine)} (100 x ${summary.totalPending})",
+                Text(
+                    "Rs. ${(summary.totalFine)}/- (100 x ${summary.totalPending})",
                     style:
                         const TextStyle(color: ColorName.error, fontSize: 18)),
               ],

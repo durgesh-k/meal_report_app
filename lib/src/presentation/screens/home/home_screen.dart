@@ -9,6 +9,7 @@ import 'package:canteen_meal_report/src/domain/utils/size_config.dart';
 import 'package:canteen_meal_report/src/presentation/screens/home/widgets/report_list_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -77,6 +78,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
         loading = false;
         error = true;
       });
+      Fluttertoast.showToast(msg: state.message);
     }
   }
 

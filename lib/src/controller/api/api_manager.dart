@@ -30,7 +30,7 @@ class ApiManager {
           "Authorization": "Bearer $token",
           "accept": "application/json"
         });
-         SecureStorage.addStringToSF("token",token );
+        SecureStorage.addStringToSF("token", token);
       } else {
         Fluttertoast.showToast(msg: "Invalid Authentication");
         _apiClient.options =
